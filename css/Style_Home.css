@@ -1,0 +1,170 @@
+header {
+    background-image: url('../images/Backround for menu.jpg'); /* Adjust the path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    height: 10%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(10px); /* Apply blur effect */
+    z-index: 0;
+}
+header h1 {
+    z-index: 1;
+    font-size: 2.5rem;
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+
+main {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+a {
+    display: block; /* Make <a> behave like a block element to take the full size of the article */
+    text-decoration: none; /* Remove underline */
+}
+
+article.fps {
+    background-image: url('../Images/FPS.jpeg');
+}
+
+article.roguelite {
+    background-image: url('../Images/Roguelike.webp');
+}
+
+article.roleplay {
+    background-image: url('../Images/Roleplay.jpeg');
+}
+
+article.rts {
+    background-image: url('../Images/RTS.jpeg');
+}
+
+article.survival {
+    background-image: url('../Images/Survival.jpg');
+}
+
+
+
+/* Make sure the link only covers the article */
+a > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    flex-shrink: 0; /* Prevents resizing */
+}
+
+/* Hover effect to enhance the experience */
+a:hover > article {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+article {
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); /* Adjust blur intensity here */
+    z-index: 1;
+}
+
+article span {
+    color: #fffefe;
+    font-size: 18px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+footer {
+    background-image: url('../images/Backround for menu.jpg'); /* Adjust the path if needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    padding: 20px;           /* Add padding if needed */
+    background-color: #333;  /* Set background color */
+    color: white;            /* Set text color */
+    position: absolute;      /* Absolute positioning to keep it at the bottom */
+    bottom: 0;               /* Position it at the bottom of the page */
+    width: 100%;             /* Make sure it spans the full width */
+    z-index: 1;              /* Make sure it stays above the pseudo-element */
+}
+
+footer::before {
+    content: '';
+    position: absolute;     /* Position the pseudo-element absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(5px); /* Apply the blur effect */
+    z-index: -1; /* Place it behind the content of the footer */
+}
+
+.wrapper {
+    flex-grow: 1; /* This will push the footer to the bottom without altering the size of the articles */
+}
