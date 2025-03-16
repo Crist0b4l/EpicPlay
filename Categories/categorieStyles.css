@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+  width: 100%;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+.home-btn {
+  text-decoration: none;
+  color: inherit;
+  font-size: 30px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-fps {
+  background-image: url(/EpicPlay/Images/categories/FPS.avif);
+}
+.bg-rogue {
+  background-image: url(/EpicPlay/Images/categories/roguelike.jpg);
+}
+.bg-rpg {
+  background-image: url(/EpicPlay/Images/categories/rpg.jpg);
+}
+.bg-rts {
+  background-image: url(/EpicPlay/Images/categories/RTS.jpg);
+}
+.bg-surv {
+  background-image: url(/EpicPlay/Images/categories/survival.avif);
+}
+
+.contenido-texto {
+  background-color: rgba(0, 0, 0, 0.726);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+  position: relative;
+}
+
+.seccion-juegos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.seccion-juegos img {
+  width: 20vw;
+  height: 35vh;
+}
+
+.seccion-juegos a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  text-align: center;
+}
