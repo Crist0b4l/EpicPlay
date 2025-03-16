@@ -1,0 +1,18 @@
+categorias
+
+-First person Shooter
+	Titanfall 2    
+	Halo Reach	
+-RTS
+	Age of empire 2		
+	Civilization V		
+-Roleplay
+	Mass Effect 3		
+	Skyrim			
+
+-Survival
+	Don't Starve	
+	Minecraft	
+-Rogue Lite
+	Hades		
+	Enter the Gungeon
