@@ -39,19 +39,19 @@ h1 {
 }
 
 .bg-fps {
-  background-image: url(/Images/categories/FPS.avif);
+  background-image: url(/EpicPlay/Images/categories/FPS.avif);
 }
 .bg-rogue {
-  background-image: url(/Images/categories/roguelike.jpg);
+  background-image: url(/EpicPlay/Images/categories/roguelike.jpg);
 }
 .bg-rpg {
-  background-image: url(/Images/categories/rpg.avif);
+  background-image: url(/EpicPlay/Images/categories/rpg.jpg);
 }
 .bg-rts {
-  background-image: url(/Images/categories/RTS.jpg);
+  background-image: url(/EpicPlay/Images/categories/RTS.jpg);
 }
 .bg-surv {
-  background-image: url(/Images/categories/survival.avif);
+  background-image: url(/EpicPlay/Images/categories/survival.avif);
 }
 
 .contenido-texto {
