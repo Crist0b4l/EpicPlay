@@ -10,147 +10,283 @@
     <link rel="stylesheet" href="./css/Style_Home.css" />
     <link rel="stylesheet" href="./css/formularioStyle.css" />
     <title>EpicPlay</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./Images/Icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/Icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/Icon/favicon-16x16.png">
+
   </head>
   <body>
     <header>
-      <h1>EPICPLAY</h1>
-    </header>
-
-    <!-- botón de registro -->
-    <div class="text-center my-4">
-      <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#registroModal">
-        Registrarse
-      </button>
-    </div>
-
-    <div class="wrapper">
-      <main>
-        <a href="./Categories/firstPersonShooter/firstPersonShooter.html">
-          <article class="fps"><span>firstPersonShooter</span></article>
-        </a>
-        <a href="./Categories/rogueLike/rogueLike.html">
-          <article class="roguelite"><span>RogueLike</span></article>
-        </a>
-        <a href="./Categories/rolePlay/roleplay.html">
-          <article class="roleplay"><span>Roleplay</span></article>
-        </a>
-        <a href="./Categories/rts/rts.html">
-          <article class="rts"><span>RTS</span></article>
-        </a>
-        <a href="./Categories/survival/survival.html">
-          <article class="survival"><span>Survival</span></article>
-        </a>
-      </main>
-    </div>
-
-    <footer>
-      <p>EpicPlay © 2025</p>
-    </footer>
-
-    <!-- modal-formulario -->
-    <div
-      class="modal fade"
-      id="registroModal"
-      tabindex="-1"
-      aria-labelledby="registroModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div
-          class="modal-content bg-dark text-white border-0"
-          style="box-shadow: 0 0 20px rgba(182, 93, 255, 0.3)"
-        >
-          <div class="modal-header border-0">
-            <h5 class="modal-title" id="registroModalLabel" style="color: #b65dff">
-              Registro de Usuario
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                    <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
+                    <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
+                  </svg>
+                EpicPlay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div class="collapse navbar-collapse" id="navbarCollapse"> 
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              -->
+              <div class="text-center">
+                <button class="btn bg-purple text-white" data-bs-toggle="modal" data-bs-target="#registroModal">
+                  Registrarse
+                </button>
+              </div>
+            </div>
+            
           </div>
-          <div class="modal-body">
-            <form id="registroForm" novalidate>
-              <div class="mb-3">
-                <label for="nombre" class="form-label" style="color: #b65dff"
-                  >Nombre completo</label
-                >
-                <input type="text" class="form-control" id="nombre" required />
-                <div class="invalid-feedback">Este campo es obligatorio.</div>
-              </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Carrusel de imagenes de juegos -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Images/games/Hades.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                    <h5 class="">Recomendado</h5>
+                    <p><span class="badge bg-success">Lo más vendido</span></p>
 
-              <div class="mb-3">
-                <label for="usuario" class="form-label" style="color: #b65dff"
-                  >Nombre de usuario</label
-                >
-                <input type="text" class="form-control" id="usuario" required />
-                <div class="invalid-feedback">Este campo es obligatorio.</div>
+                </div>
               </div>
+              <div class="carousel-item">
+                <img src="./Images/games/Dont Starve Together.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                    <h5 class="">Recomendado</h5>
+                    <p><span class="badge bg-success">Lo más vendido</span></p>
 
-              <div class="mb-3">
-                <label for="email" class="form-label" style="color: #b65dff"
-                  >Correo electrónico</label
-                >
-                <input type="email" class="form-control" id="email" required />
-                <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                  </div>
               </div>
+              <div class="carousel-item">
+                <img src="./Images/games/Skyrim.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
+                    <h5 class="">Recomendado</h5>
+                    <p><span class="badge bg-success">Lo más vendido</span></p>
 
-              <div class="mb-3">
-                <label for="password" class="form-label" style="color: #b65dff">Contraseña</label>
-                <input type="password" class="form-control" id="password" required />
-                <div class="invalid-feedback">
-                  Debe tener 6-18 caracteres, al menos una mayúscula y un número.
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <!-- Seccion proxima 
+            <div class="row mt-5">
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <h2 class="fw-normal">Heading</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              </div>
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <h2 class="fw-normal">Heading</h2>
+                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              </div>
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <h2 class="fw-normal">Heading</h2>
+                <p>And lastly this, the third column of representative placeholder content.</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              </div>
+            </div>
+             -->
+        
+             <!-- Seccion categorias -->
+            <hr class="featurette-divider">
+            <!-- firstPersonShooter -->
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1"><a href="./Categories/firstPersonShooter/firstPersonShooter.html">First Person Shooter FPS</a></h2>
+                <p class="lead">Es un género de videojuegos que simula el uso de armas de fuego desde una perspectiva de primera persona.</p>
+              </div>
+              <div class="col-md-5">
+                <img src="./Images/categories/FPS.avif" alt="Imagen de un FPS" class="featurette-image img-fluid mx-auto" width="500" height="500">
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+            <!-- RogueLike -->
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1"><a href="./Categories/rogueLike/rogueLike.html">RogueLike</a></h2>
+                <p class="lead">La mayoría de los roguelikes se basan en una narrativa de fantasía alta, que refleja su influencia de los juegos de rol de mesa como Dungeons & Dragons.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img src="./Images/categories/roguelike.jpg" alt="Descripción de la imagen" class="featurette-image img-fluid mx-auto" width="500" height="500">
+                </div>
+            </div>
+
+              <hr class="featurette-divider">
+              <!-- Roleplay -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1"><a href="./Categories/rolePlay/roleplay.html">Rol (RPG)</a></a></h2>
+                  <p class="lead">Es un género de videojuegos donde el jugador controla las acciones de un personaje (o de diversos miembros de un grupo) inmerso en algún detallado mundo.</p>
+                </div>
+                <div class="col-md-5">
+                  <img src="./Images/categories/rpg.jpg" alt="Imagen de un FPS" class="featurette-image img-fluid mx-auto" width="500" height="500">
                 </div>
               </div>
 
-              <div class="mb-3">
-                <label for="repassword" class="form-label" style="color: #b65dff"
-                  >Repetir contraseña</label
-                >
-                <input type="password" class="form-control" id="repassword" required />
-                <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+              <hr class="featurette-divider">
+              <!-- RTS -->
+              <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <h2 class="featurette-heading fw-normal lh-1"><a href="./Categories/rts/rts.html">Estrategia (RTS)</a></h2>
+                  <p class="lead">Los videojuegos en tiempo real son uno de los subgéneros de los juegos de estrategia más dinámicos que hay. Además, por regla general están más trabajados en el apartado gráfico, ya que al tener terrenos de juego más pequeños que otros subgéneros, se pueden representar más texturas sin alterar tanto el rendimiento.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <img src="./Images/categories/RTS.jpg" alt="Descripción de la imagen" class="featurette-image img-fluid mx-auto" width="500" height="500">
+                  </div>
               </div>
 
-              <div class="mb-3">
-                <label for="fecha" class="form-label" style="color: #b65dff"
-                  >Fecha de nacimiento</label
-                >
-                <input type="date" class="form-control" id="fecha" required />
-                <div class="invalid-feedback">Debes tener al menos 13 años para registrarte.</div>
-              </div>
+              <hr class="featurette-divider">
+                <!-- Survival -->
+                <div class="row featurette">
+                    <div class="col-md-7">
+                      <h2 class="featurette-heading fw-normal lh-1"><a href="./Categories/survival/survival.html">Supervivencia</a></h2>
+                      <p class="lead"> Es un subgénero de los videojuegos de acción ambientado en un ambiente hostil, intenso y de mundo abierto, donde los jugadores generalmente comienzan con equipos mínimos y se les exige que recolecten recursos, herramientas de artesanía, armas y refugio, y sobrevivan el mayor tiempo posible.</p>
+                    </div>
+                    <div class="col-md-5">
+                      <img src="./Images/categories/survival.avif" alt="Imagen de un FPS" class="featurette-image img-fluid mx-auto" width="500" height="500">
+                    </div>
+                  </div>
+            </div>
 
-              <div class="mb-3">
-                <label for="direccion" class="form-label" style="color: #b65dff">
-                  Dirección de despacho (opcional)
-                </label>
-                <input type="text" class="form-control" id="direccion" />
-              </div>
-
-              <div class="d-flex justify-content-between">
-                <button
-                  type="button"
-                  id="btnRegistrar"
-                  class="btn btn-primary"
-                  style="background-color: #b65dff; border: none"
-                >
-                  Registrar
-                </button>
-                <button
-                  type="reset"
-                  class="btn btn-secondary"
-                  style="background-color: #444; border: none"
-                >
-                  Limpiar
-                </button>
-              </div>
-            </form>
           </div>
+        <!-- FOOTER -->
+        <footer class="container p-4">
+            <button type="button" class="btn bg-purple float-end"><a href="#" class="text-decoration-none">Volver arriba</a></button>
+            <p>EpicPlay © 2025</p>
+        </footer>
+
+        <!-- modal-formulario -->
+    <div
+    class="modal fade"
+    id="registroModal"
+    tabindex="-1"
+    aria-labelledby="registroModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div
+        class="modal-content bg-dark text-white border-0"
+        style="box-shadow: 0 0 20px rgba(182, 93, 255, 0.3)"
+      >
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="registroModalLabel" style="color: #b65dff">
+            Registro de Usuario
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form id="registroForm" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label" style="color: #b65dff"
+                >Nombre completo</label
+              >
+              <input type="text" class="form-control" id="nombre" required />
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="usuario" class="form-label" style="color: #b65dff"
+                >Nombre de usuario</label
+              >
+              <input type="text" class="form-control" id="usuario" required />
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label" style="color: #b65dff"
+                >Correo electrónico</label
+              >
+              <input type="email" class="form-control" id="email" required />
+              <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label" style="color: #b65dff">Contraseña</label>
+              <input type="password" class="form-control" id="password" required />
+              <div class="invalid-feedback">
+                Debe tener 6-18 caracteres, al menos una mayúscula y un número.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="repassword" class="form-label" style="color: #b65dff"
+                >Repetir contraseña</label
+              >
+              <input type="password" class="form-control" id="repassword" required />
+              <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="fecha" class="form-label" style="color: #b65dff"
+                >Fecha de nacimiento</label
+              >
+              <input type="date" class="form-control" id="fecha" required />
+              <div class="invalid-feedback">Debes tener al menos 13 años para registrarte.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="direccion" class="form-label" style="color: #b65dff">
+                Dirección de despacho (opcional)
+              </label>
+              <input type="text" class="form-control" id="direccion" />
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <button
+                type="button"
+                id="btnRegistrar"
+                class="btn btn-primary"
+                style="background-color: #b65dff; border: none"
+              >
+                Registrar
+              </button>
+              <button
+                type="reset"
+                class="btn btn-secondary"
+                style="background-color: #444; border: none"
+              >
+                Limpiar
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-
+  </div>
+    </main>
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
