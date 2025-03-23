@@ -39,19 +39,19 @@ h1 {
 }
 
 .bg-fps {
-  background-image: url(/EpicPlay/Images/categories/FPS.avif);
+  background-image: url(../Images/categories/FPS.avif);
 }
 .bg-rogue {
-  background-image: url(/EpicPlay/Images/categories/roguelike.jpg);
+  background-image: url(../Images/categories/roguelike.jpg);
 }
 .bg-rpg {
-  background-image: url(/EpicPlay/Images/categories/rpg.jpg);
+  background-image: url(../Images/categories/rpg.jpg);
 }
 .bg-rts {
-  background-image: url(/EpicPlay/Images/categories/RTS.jpg);
+  background-image: url(../Images/categories/RTS.jpg);
 }
 .bg-surv {
-  background-image: url(/EpicPlay/Images/categories/survival.avif);
+  background-image: url(../Images/categories/survival.avif);
 }
 
 .contenido-texto {
@@ -59,7 +59,7 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  max-width: 800px;
+  max-width: 2000px;
   position: relative;
 }
 
@@ -69,19 +69,5 @@ h1 {
   align-items: center;
   padding: 40px 20px;
   background-color: #1a1a1a;
-  text-align: center;
-}
-
-.seccion-juegos img {
-  width: 20vw;
-  height: 35vh;
-}
-
-.seccion-juegos a {
-  text-decoration: none;
-  color: inherit;
-}
-
-footer {
   text-align: center;
 }
