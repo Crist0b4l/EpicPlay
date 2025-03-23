@@ -3,55 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/Style_Home.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/Style_Home.css" />
+    <link rel="stylesheet" href="./css/formularioStyle.css" />
     <title>EpicPlay</title>
   </head>
   <body>
     <header>
       <h1>EPICPLAY</h1>
     </header>
+
+    <!-- botón de registro -->
+    <div class="text-center my-4">
+      <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#registroModal">
+        Registrarse
+      </button>
+    </div>
+
     <div class="wrapper">
       <main>
         <a href="./Categories/firstPersonShooter/firstPersonShooter.html">
-          <article class="fps">
-            <span>firstPersonShooter</span>
-          </article>
+          <article class="fps"><span>firstPersonShooter</span></article>
         </a>
         <a href="./Categories/rogueLike/rogueLike.html">
-          <article class="roguelite">
-            <span>RogueLike</span>
-          </article>
+          <article class="roguelite"><span>RogueLike</span></article>
         </a>
         <a href="./Categories/rolePlay/roleplay.html">
-          <article class="roleplay">
-            <span>Roleplay</span>
-          </article>
+          <article class="roleplay"><span>Roleplay</span></article>
         </a>
         <a href="./Categories/rts/rts.html">
-          <article class="rts">
-            <span>RTS</span>
-          </article>
+          <article class="rts"><span>RTS</span></article>
         </a>
         <a href="./Categories/survival/survival.html">
-          <article class="survival">
-            <span>Survival</span>
-          </article>
+          <article class="survival"><span>Survival</span></article>
         </a>
       </main>
     </div>
+
     <footer>
       <p>EpicPlay © 2025</p>
     </footer>
+
+    <!-- modal-formulario -->
+    <div
+      class="modal fade"
+      id="registroModal"
+      tabindex="-1"
+      aria-labelledby="registroModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content bg-dark text-white border-0"
+          style="box-shadow: 0 0 20px rgba(182, 93, 255, 0.3)"
+        >
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="registroModalLabel" style="color: #b65dff">
+              Registro de Usuario
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="registroForm" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label" style="color: #b65dff"
+                  >Nombre completo</label
+                >
+                <input type="text" class="form-control" id="nombre" required />
+                <div class="invalid-feedback">Este campo es obligatorio.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="usuario" class="form-label" style="color: #b65dff"
+                  >Nombre de usuario</label
+                >
+                <input type="text" class="form-control" id="usuario" required />
+                <div class="invalid-feedback">Este campo es obligatorio.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label" style="color: #b65dff"
+                  >Correo electrónico</label
+                >
+                <input type="email" class="form-control" id="email" required />
+                <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label" style="color: #b65dff">Contraseña</label>
+                <input type="password" class="form-control" id="password" required />
+                <div class="invalid-feedback">
+                  Debe tener 6-18 caracteres, al menos una mayúscula y un número.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="repassword" class="form-label" style="color: #b65dff"
+                  >Repetir contraseña</label
+                >
+                <input type="password" class="form-control" id="repassword" required />
+                <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="fecha" class="form-label" style="color: #b65dff"
+                  >Fecha de nacimiento</label
+                >
+                <input type="date" class="form-control" id="fecha" required />
+                <div class="invalid-feedback">Debes tener al menos 13 años para registrarte.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="direccion" class="form-label" style="color: #b65dff">
+                  Dirección de despacho (opcional)
+                </label>
+                <input type="text" class="form-control" id="direccion" />
+              </div>
+
+              <div class="d-flex justify-content-between">
+                <button
+                  type="button"
+                  id="btnRegistrar"
+                  class="btn btn-primary"
+                  style="background-color: #b65dff; border: none"
+                >
+                  Registrar
+                </button>
+                <button
+                  type="reset"
+                  class="btn btn-secondary"
+                  style="background-color: #444; border: none"
+                >
+                  Limpiar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/validacionFormulario.js"></script>
   </body>
 </html>
