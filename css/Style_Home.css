@@ -1,46 +1,53 @@
-html, main {
-    background-color: #212529;
-    color: white;
+html,
+main {
+  background-color: #212529;
+  color: white;
 }
 
 .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-}
-
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
 }
 .carousel-item img {
-    height: 90vh;
-    object-fit: cover;
+  height: 90vh;
+  object-fit: cover;
 }
-  
+
 .bg-purple {
-    background-color: #6f42c1 !important; /* Un morado Bootstrap */
-    border-color: #6f42c1 !important;
+  background-color: #6f42c1 !important; /* Un morado Bootstrap */
+  border-color: #6f42c1 !important;
 }
 
 .bg-purple:hover {
-    background-color: #5a3791 !important; /* Un tono más oscuro al pasar el cursor */
+  background-color: #5a3791 !important; /* Un tono más oscuro al pasar el cursor */
 }
 
 .bg-purple a {
-    color: white;
+  color: white;
 }
 
 .featurette a {
-    color: #824ed6;
-    text-decoration: none;
+  color: #824ed6;
+  text-decoration: none;
 }
 
 .featurette a:hover {
-    color: #8b54f3;
+  color: #8b54f3;
 }
 
+footer {
+  background-color: #111;
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 60px;
+}
