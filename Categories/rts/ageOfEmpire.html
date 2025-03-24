@@ -3,36 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/EpicPlay/css/style.css" />
-    <title>EpicPlay</title>
+    <title>Age of Empires II</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/ficha_style.css" />
   </head>
   <body>
-    <header>
-      <h1>Mi Página Web</h1>
-      <nav>
-        <select>
-          <option>Inicio</option>
-          <option>Sobre Nosotros</option>
-          <option>Servicios</option>
-          <option>Contacto</option>
-        </select>
-      </nav>
+    <header class="bg-dark text-white py-3 px-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="../../EpicPlay.html" class="home-link">
+          <h1 class="h4 mb-0">EpicPlay</h1>
+        </a>
+        <div>
+          <a href="../../index.html" class="btn btn-outline-light">Registrarse</a>
+        </div>
+      </div>
     </header>
+    <main class="container">
+      <div class="product-container mx-auto" style="max-width: 1200px">
+        <div class="row align-items-start">
+          <!-- Imagen -->
+          <div class="col-md-5 mb-4 sticky-image">
+            <img
+              src="../../Images/games/Age2.jpg"
+              alt="ETG"
+              class="game-image"
+              width="500vw"
+              height="1000vh"
+            />
+          </div>
 
-    <main>
-      <article>
-        <h2>Artículo Principal</h2>
-        <p>Este es el contenido del artículo principal.</p>
-        <a href="./terror.html">ir a terror</a>
-      </article>
-      <aside>
-        <h2>Información Adicional</h2>
-        <p>Aquí irá información adicional.</p>
-      </aside>
+          <!-- Info -->
+          <div class="col-md-7">
+            <h2 class="mb-3">Age of Empires 2</h2>
+            <p class="price-tag mb-2">CLP$ 26.990</p>
+            <p class="text-white mb-4">
+              Impuesto incluido. El envío se calcula al finalizar la compra.
+            </p>
+
+            <div class="mb-3">
+              <label for="cantidad" class="form-label">Cantidad</label>
+              <div class="input-group" style="max-width: 120px">
+                <button class="btn btn-outline-secondary" type="button">−</button>
+                <input type="text" class="form-control text-center" value="1" />
+                <button class="btn btn-outline-secondary" type="button">+</button>
+              </div>
+            </div>
+
+            <button class="btn btn-dark w-100 mb-2">Agregar al carrito</button>
+            <button class="btn btn-outline-dark w-100 mb-3">Añadir a Favoritos</button>
+            <button class="btn btn-success w-100">Avísenme cuando llegue</button>
+            <!--
+            <div class="mt-4">
+              <p><strong>Paga seguro con</strong></p>
+              <img
+                src="https://i.imgur.com/1OeMlJh.png"
+                alt="Métodos de pago"
+                style="max-height: 30px"
+              />
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
     </main>
+    <!-- También podría interesarte -->
+    <section class="container my-5">
+      <h4 class="mb-4 text-center">También podría interesarte</h4>
+      <div class="row g-4 justify-content-center">
+        <!-- Juego 1 -->
+        <div class="col-6 col-sm-4 col-md-3 container-related">
+          <div class="related-game text-white p-3 text-center rounded">
+            <a href="../rts/civilization.html" style="text-decoration: none">
+              <img
+                src="../../Images/games/CivV.jpg"
+                class="rounded mb-2"
+                alt="Civilization V"
+                width="200px"
+                height="200px"
+              />
+              <p class="mb-1" style="color: white">Civilization V</p>
+              <strong style="color: white">$26.990</strong>
+            </a>
+          </div>
+        </div>
+
+        <!-- Juego 2 -->
+        <div class="col-6 col-sm-4 col-md-3 container-related">
+          <div class="related-game text-dark p-3 text-center rounded">
+            <a href="../survival/dontStarve.html" style="text-decoration: none">
+              <img
+                src="../../Images/games/Dont Starve Together.avif"
+                class="rounded mb-2"
+                alt="Dont starve Together"
+                width="200px"
+                height="200px"
+              />
+              <p class="mb-1" style="color: white">Dont starve together</p>
+              <strong style="color: white">$26.990</strong>
+            </a>
+          </div>
+        </div>
+
+        <!-- Juego 3 -->
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="related-game text-dark p-3 text-center rounded container-related">
+            <a href="../survival/minecraft.html" style="text-decoration: none">
+              <img
+                src="../../Images/games/Minecraft.jpg"
+                class="rounded mb-2"
+                alt="Minecraft"
+                width="200px"
+                height="200px"
+              />
+              <p class="mb-1" style="color: white">Minecraft</p>
+              <strong style="color: white">$26.990</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
-      <p>© 2025 Mi Página Web</p>
+      <p>EpicPlay © 2025 | Tienda de videojuegos y más</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
