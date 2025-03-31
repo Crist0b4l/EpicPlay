@@ -51,3 +51,39 @@ footer {
   text-align: center;
   margin-top: 60px;
 }
+
+.nav-item .nav-link {
+  color: white;
+}
+
+form button.btn-outline-light {
+  background-color: rgb(111, 66, 193);
+  border-color: rgb(111, 66, 193);
+  color: rgb(255, 255, 255);
+}
+
+form button.btn-outline-light:hover {
+  background-color: #5a3791;
+  border-color: #5a3791;
+  color: white;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons .icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%); /* si estás usando fondo oscuro */
+  transition: transform 0.2s ease;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.2);
+}
