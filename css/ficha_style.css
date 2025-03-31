@@ -126,3 +126,16 @@ footer {
 .social-icons .icon:hover {
   transform: scale(1.2);
 }
+
+/* Botón de búsqueda */
+form button.btn-outline-light {
+  background-color: #a259ff;
+  border-color: #a259ff;
+  color: #ffffff;
+}
+
+form button.btn-outline-light:hover {
+  background-color: #6a29cc;
+  border-color: #6a29cc;
+  color: white;
+}
