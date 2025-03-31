@@ -2,26 +2,31 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Evita el scroll horizontal */
+  overflow-x: hidden;
   width: 100%;
-}
-
-body {
-  background-color: #1a1a1a;
-  color: white;
+  background-color: #0b0c10; /* fondo general */
+  color: #c5c6c7; /* texto claro */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
   text-align: center;
+  color: #ffffff;
 }
+
 .home-btn {
   text-decoration: none;
-  color: inherit;
+  color: #a259ff;
   font-size: 30px;
   font-family: inherit;
   cursor: pointer;
 }
 
+.home-btn:hover {
+  color: #6a29cc;
+}
+
+/* Secciones de fondo con imagen */
 .bg {
   background-size: cover;
   background-position: center;
@@ -38,6 +43,7 @@ h1 {
   align-items: center;
 }
 
+/* Fondos por categoría */
 .bg-fps {
   background-image: url(../Images/categories/FPS.avif);
 }
@@ -54,30 +60,35 @@ h1 {
   background-image: url(../Images/categories/survival.avif);
 }
 
+/* Fondo opaco de texto sobre imagen */
 .contenido-texto {
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: rgba(31, 40, 51, 0.9); /* fondo más violeta oscuro */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   max-width: 2000px;
   position: relative;
+  box-shadow: 0 0 10px #a259ff3b;
 }
 
+/* Sección inferior */
 .seccion-juegos {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 40px 20px;
-  background-color: #1a1a1a;
+  background-color: #1f1b2e;
   text-align: center;
 }
 
+/* Footer */
 footer {
-  background-color: #111;
-  color: #ffffff;
+  background-color: #1f1b2e;
+  color: #c5c6c7;
   padding: 40px 0;
   text-align: center;
 }
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -92,14 +103,15 @@ footer {
   }
 }
 
+/* Bootstrap elements (colores adaptados) */
 .b-example-divider {
   width: 100%;
   height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid rgba(255, 255, 255, 0.1);
   border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0.5em 1.5em rgba(255, 255, 255, 0.05),
+    inset 0 0.125em 0.5em rgba(255, 255, 255, 0.1);
 }
 
 .b-example-vr {
@@ -132,18 +144,18 @@ footer {
 }
 
 .btn-bd-primary {
-  --bd-violet-bg: #712cf9;
-  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  --bd-violet-bg: #a259ff;
+  --bd-violet-rgb: 162, 89, 255;
 
   --bs-btn-font-weight: 600;
-  --bs-btn-color: var(--bs-white);
+  --bs-btn-color: #fff;
   --bs-btn-bg: var(--bd-violet-bg);
   --bs-btn-border-color: var(--bd-violet-bg);
-  --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #6528e0;
-  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6a29cc;
+  --bs-btn-hover-border-color: #6a29cc;
   --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #5a23c8;
   --bs-btn-active-border-color: #5a23c8;
 }
@@ -154,4 +166,63 @@ footer {
 
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
+}
+
+.card-juego {
+  background-color: #1f1b2e !important;
+  border: 1px solid #5c4d7d;
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: 0 0 6px rgba(162, 89, 255, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-juego:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(162, 89, 255, 0.3);
+}
+
+.card-juego .card-body {
+  background-color: transparent;
+}
+
+.card-juego .card-text {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.card-juego .btn-outline-secondary {
+  color: #a259ff;
+  border-color: #a259ff;
+}
+
+.card-juego .btn-outline-secondary:hover {
+  background-color: #6a29cc;
+  border-color: #6a29cc;
+  color: white;
+}
+
+.contenedor-juegos {
+  background-color: #0b0c10;
+}
+
+.contenedor-texto {
+  background-color: #1a1a2ede;
+}
+
+.nav-item .nav-link {
+  color: #ffffff;
+}
+
+/* Botón de búsqueda */
+form button.btn-outline-light {
+  background-color: #a259ff;
+  border-color: #a259ff;
+  color: #ffffff;
+}
+
+form button.btn-outline-light:hover {
+  background-color: #6a29cc;
+  border-color: #6a29cc;
+  color: white;
 }

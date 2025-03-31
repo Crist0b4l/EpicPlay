@@ -1,7 +1,7 @@
 html,
 main {
-  background-color: #212529;
-  color: white;
+  background-color: #0b0c10; /* fondo más oscuro */
+  color: #c5c6c7; /* texto claro */
 }
 
 .bd-placeholder-img {
@@ -17,57 +17,64 @@ main {
     font-size: 3.5rem;
   }
 }
+
 .carousel-item img {
   height: 90vh;
   object-fit: cover;
 }
 
+/* Botón y fondo morado moderno */
 .bg-purple {
-  background-color: #6f42c1 !important; /* Un morado Bootstrap */
-  border-color: #6f42c1 !important;
+  background-color: #a259ff !important;
+  border-color: #a259ff !important;
 }
 
 .bg-purple:hover {
-  background-color: #5a3791 !important; /* Un tono más oscuro al pasar el cursor */
+  background-color: #6a29cc !important;
 }
 
 .bg-purple a {
   color: white;
 }
 
+/* Links destacados */
 .featurette a {
-  color: #824ed6;
+  color: #a259ff;
   text-decoration: none;
 }
 
 .featurette a:hover {
-  color: #8b54f3;
+  color: #6a29cc;
 }
 
+/* Footer oscuro */
 footer {
-  background-color: #111;
-  color: #ffffff;
+  background-color: #1f1b2e;
+  color: #c5c6c7;
   padding: 40px 0;
   text-align: center;
   margin-top: 60px;
 }
 
+/* Navegación */
 .nav-item .nav-link {
-  color: white;
+  color: #ffffff;
 }
 
+/* Botón de búsqueda */
 form button.btn-outline-light {
-  background-color: rgb(111, 66, 193);
-  border-color: rgb(111, 66, 193);
-  color: rgb(255, 255, 255);
+  background-color: #a259ff;
+  border-color: #a259ff;
+  color: #ffffff;
 }
 
 form button.btn-outline-light:hover {
-  background-color: #5a3791;
-  border-color: #5a3791;
+  background-color: #6a29cc;
+  border-color: #6a29cc;
   color: white;
 }
 
+/* Iconos sociales */
 .social-icons {
   margin-top: 10px;
 }
@@ -80,7 +87,7 @@ form button.btn-outline-light:hover {
 .social-icons .icon {
   width: 24px;
   height: 24px;
-  filter: invert(100%); /* si estás usando fondo oscuro */
+  filter: invert(100%);
   transition: transform 0.2s ease;
 }
 
