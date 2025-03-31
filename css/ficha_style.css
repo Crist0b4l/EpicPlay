@@ -93,3 +93,36 @@ footer {
   text-decoration: none;
   color: white;
 }
+
+.nav-item .nav-link {
+  color: #ffffff;
+}
+
+footer {
+  background-color: #1f1b2e;
+  color: #c5c6c7;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* Iconos sociales */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons .icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+  transition: transform 0.2s ease;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.2);
+}
