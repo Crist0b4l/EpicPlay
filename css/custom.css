@@ -1,0 +1,131 @@
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+.borrar-juegos {
+    background-color: crimson;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 10;
+    background-color: #1a1a2e;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom:0;
+    }
+}
+
+
+
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+
+#carrito {
+    background-color: #1a1a2e; /* Fondo oscuro del carrito */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(182, 93, 255, 0.1); /* Sombras suaves */
+    padding: 20px;
+    min-width: 300px;
+    max-width: 500px;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    z-index: 1050;
+  }
+  
+  #carrito h5 {
+    font-size: 1.2rem;
+    color: #b65dff; /* Color morado en el título */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #lista-carrito {
+    background-color: #222; /* Fondo oscuro para la tabla */
+    border-radius: 10px;
+  }
+  
+  #lista-carrito th {
+    color: #fff;
+    background-color: #1f1b2e; /* Fondo oscuro en el encabezado */
+  }
+  
+  #lista-carrito td {
+    color: #383838; /* Color suave para el texto */
+  }
+  
+  #vaciar-carrito {
+    background-color: #b65dff; /* Color de botón morado */
+    border-radius: 8px;
+    border: none;
+  }
+  
+  #vaciar-carrito:hover {
+    background-color: #9c4ce5;
+  }
+  
+  #carrito .btn-success {
+    background-color: #b65dff;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  #carrito .btn-success:hover {
+    background-color: #9c4ce5;
+  }
+  
+  /* Efectos de hover en la tabla */
+  #lista-carrito tr:hover {
+    background-color: #3a3a56; /* Efecto sutil al pasar el ratón */
+    cursor: pointer;
+  }
+  
+  #lista-carrito td img {
+    max-height: 80px; /* Limitar la altura de la imagen */
+    border-radius: 10px;
+  }
+  
+  .d-grid a {
+    margin-top: 10px;
+  }
+  

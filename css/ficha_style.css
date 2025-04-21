@@ -35,29 +35,56 @@ body {
   top: 100px;
 }
 
-/* Botones */
-.btn {
-  border-radius: 8px;
+/* Estilos para los botones */
+.btn-agregar-carrito {
+  background-color: #b65dff; /* Morado vibrante */
+  color: #fff; /* Texto blanco */
+  border-radius: 12px; /* Bordes redondeados */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-outline-dark {
-  border-color: #b65dff;
-  color: #b65dff;
+.btn-agregar-carrito:hover {
+  background-color: #9c4ce5; /* Morado más oscuro al hacer hover */
+  transform: scale(1.05); /* Levemente agrandado al pasar el ratón */
 }
 
-.btn-outline-dark:hover {
+.btn-favoritos {
+  background-color: transparent;
+  color: #b65dff; /* Morado de los textos */
+  border: 2px solid #b65dff; /* Borde morado */
+  border-radius: 12px; /* Bordes redondeados */
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-favoritos:hover {
   background-color: #b65dff;
-  color: #1a1a2e;
+  color: #1a1a2e; /* Fondo oscuro */
 }
 
-.btn-success {
-  background-color: #b65dff;
-  border: none;
+.btn-notificacion {
+  background-color: #b65dff; /* Morado vibrante */
+  color: #fff; /* Texto blanco */
+  border-radius: 12px; /* Bordes redondeados */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-success:hover {
+.btn-notificacion:hover {
   background-color: #9c4ce5;
+  transform: scale(1.05); /* Efecto de agrandamiento */
 }
+
+/* Tamaño y márgenes */
+.w-100 {
+  width: 100% !important;
+}
+
+.mb-2, .mb-3 {
+  margin-bottom: 1rem !important;
+}
+
 
 /* Footer */
 footer {
